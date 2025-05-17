@@ -21,53 +21,6 @@ To illustrate how SRP can be implemented in C++, this project defines two classe
 ```
 
 ---
-
-## 🧾 Code Overview
-
-main.cpp:
-
-```cpp
-#include<iostream>
-#include<string>
-#include<vector>
-
-using namespace std;
-
-// Handles only student data
-class Student {
-public:
-    string name;
-
-    Student(string n) {
-        name = n;
-    };
-
-    void displayStudentInfo() {
-        cout << "Student name is : " << name << endl;
-    };
-};
-
-// Handles only data storage
-class StudnetDataBase {
-public:
-    void DataSave(Student ss) {
-        cout << "Your Data has been save in DB : " << ss.name;
-    }
-};
-
-int main() {
-    Student stu("Rahul_kumar");
-    stu.displayStudentInfo();
-
-    StudnetDataBase stuDB;
-    stuDB.DataSave(stu);
-
-    return 0;
-}
-```
-
----
-
 ## ✅ Output
 
 ```
