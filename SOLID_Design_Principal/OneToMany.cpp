@@ -3,33 +3,39 @@
 #include<vector>
 
 using namespace std;
+//Single responsibility principal.
+//Each class has only one one responsibility.
+ 
 
-
-// It's product card representing of any product.
-class Product{
-    private:
-        int price;
+ //It will be only one resbonsibility to handle the DATA.
+class Student{
+    public:
         string name;
+
+        Student(string n){
+            name = n;
+        };
+        void displayStudentInfo(){
+            cout<<"Student name is : "<<name<<endl;
+        };
+};
+
+
+//It will be only save the data in DATABASE.
+class StudnetDataBase{
     public:
-        Product(int p, string name){
-            this->price = p;
-            this->name = name;
+        void DataSave(Student ss){
+            cout<<"Your Data has been save in DB : "<< ss.name;
         }
 };
-//This is a shoping card. It will store the all product in a vector.
-class Shopping_card{
-    private:
-        vector<Product>products;
-    public:
-        void addProduct(const Product& p){
-            products.push_back(p);
-        }
-};
 
 
-class CardInvoicePring{
+int main(){
+        Student stu("Rahul_kumar");
+        stu.displayStudentInfo();
 
-};
-class CartDBStorage{
+        StudnetDataBase stuDB;
+        stuDB.DataSave(stu);
 
-};
+    return 0;
+}
