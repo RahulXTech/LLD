@@ -30,13 +30,13 @@ LLD/
 
 ## 📆 Commit Timeline
 
-| File Name             | Description                         | Last Updated |
-|----------------------|-------------------------------------|--------------|
-| 01_Introduction.txt  | Started LLD basics                  | 5 days ago   |
-| 02_Abstraction.cpp   | Abstraction example in C++          | 5 days ago   |
-| 02_Abstraction.exe   | Compiled version of abstraction     | 5 days ago   |
-| 03_Encapsulation.cpp | Encapsulation example in C++        | 2 days ago   |
-| SOLID_Design_Principal/ | Learning and practicing SOLID     | 15 hours ago |
+| File Name             | Description                         | 
+|----------------------|-------------------------------------|
+| 01_Introduction.txt  | Started LLD basics                  |
+| 02_Abstraction.cpp   | Abstraction example in C++          |
+| 02_Abstraction.exe   | Compiled version of abstraction     | 
+| 03_Encapsulation.cpp | Encapsulation example in C++        | 
+| SOLID_Design_Principal/ | Learning and practicing SOLID     | 
 
 ---
 
@@ -84,4 +84,4 @@ Feel free to open an issue or submit a pull request.
 ## 🔗 Connect with Me
 
 - GitHub: [@RahulXTech](https://github.com/RahulXTech)
-- LinkedIn: *Add your LinkedIn profile link here*
+- LinkedIn: [(https://www.linkedin.com/in/contactrahulsharma/)]
