@@ -5,8 +5,6 @@
 using namespace std;
 //Single responsibility principal.
 //Each class has only one one responsibility.
- 
-
  //It will be only one resbonsibility to handle the DATA.
 class Student{
     public:
@@ -19,8 +17,6 @@ class Student{
             cout<<"Student name is : "<<name<<endl;
         };
 };
-
-
 //It will be only save the data in DATABASE.
 class StudnetDataBase{
     public:
@@ -28,8 +24,6 @@ class StudnetDataBase{
             cout<<"Your Data has been save in DB : "<< ss.name;
         }
 };
-
-
 int main(){
         Student stu("Rahul_kumar");
         stu.displayStudentInfo();
