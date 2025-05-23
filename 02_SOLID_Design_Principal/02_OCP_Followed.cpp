@@ -1,15 +1,38 @@
 #include<iostream>
 #include<string>
-
 using namespace std;
-
-class Calculator{
+class Card{
     private:
-        int num1;
-        int num2;
+};
+class ShopinCard{
     public:
-        Calculator(int first, int second){
-            this->num1 = first;
-            this->num2 = second;
+        virtual void Save() = 0;
+};
+
+class SaveToDB : public ShopinCard{
+    public:
+       void Save() override{
+            cout<<"Your Data has been save in DataBase (Successfully) "<<endl;
         }
 };
+class saveToSQL: public ShopinCard{
+    public:
+       void Save() override{
+            cout<<"Your data has been save in SQL (Successfully)"<<endl;
+        }      
+};
+class saveToFile : public ShopinCard{
+    public:
+        void Save() override{
+            cout<<"Your data has been save in file"<<endl;
+        }
+};
+int main(){
+saveToSQL SQL;
+SQL.Save();
+SaveToDB DB;
+DB.Save();
+saveToFile file;
+file.Save();
+    return 0;
+}
