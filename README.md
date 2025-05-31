@@ -85,3 +85,4 @@ Feel free to open an issue or submit a pull request.
 
 - GitHub: [@RahulXTech](https://github.com/RahulXTech)
 - LinkedIn: [(https://www.linkedin.com/in/contactrahulsharma/)]
+- Email: [rahul.code2024@gmail.com]
